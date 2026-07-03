@@ -260,6 +260,14 @@ ul{ list-style: none; margin: 0; padding: 0; }
 }
 .info-bio-text{ flex: 1; min-width: 220px; }
 
+.info ul li{
+  font-size: .98rem;
+  color: var(--text-soft);
+  padding: .5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.info ul li:last-child{ border-bottom: none; }
+
 /* Formulario dentro de .info */
 .info form label{
   font-size: .85rem;
@@ -280,6 +288,21 @@ ul{ list-style: none; margin: 0; padding: 0; }
   border-color: var(--secondary);
   box-shadow: 0 0 0 3px rgba(8,149,143,.15);
 }
+
+/* ---------- Chip (modalidad de atención, etiquetas cortas) ---------- */
+.chip{
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .6rem 1.1rem;
+  border-radius: 50px;
+  background: var(--bg-soft-2);
+  color: var(--secondary-dark);
+  font-weight: 600;
+  font-size: .88rem;
+  margin: 0 .5rem .5rem 0;
+}
+.chip i{ color: var(--secondary); }
 
 /* ---------- Foro (placeholder para próxima actualización) ---------- */
 .foro{
